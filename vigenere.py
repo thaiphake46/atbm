@@ -28,8 +28,9 @@ def decryption(encrypt_text, key):
 
 if __name__ == "__main__":
     string = input("Enter the message: ").upper()
-    keyword = input("Enter the keyword: ")
+    keyword = input("Enter the keyword: ").upper()
     key = generateKey(string, keyword)
+    print(key)
     encrypt_text = encryption(string, key)
     print("Encrypted message:", encrypt_text)
     print("Decrypted message:", decryption(encrypt_text, key))

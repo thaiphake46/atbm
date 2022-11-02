@@ -1,3 +1,4 @@
+
 # Create a 5x5 matrix using a secret key
 def create_matrix(key):
     key = key.upper()
@@ -69,8 +70,7 @@ def playfair(key, message, encrypt=True):
     if encrypt == False:
         inc = -1
     matrix = create_matrix(key)
-    # print(matrix)
-    # print()
+
     message = message.upper()
     message = message.replace(' ', '')
     message = separate_same_letters(message)

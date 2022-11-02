@@ -16,6 +16,7 @@ MY_KEY = "cvwopslweinedvq9fnasdlkfn2"
 def main():
     print("\n\n---Vernam Cypher---")
     PlainText = input("Enter text to encrypt: ")
+    print(MY_KEY)
     # Encrypt
     Cypher = makeVernamCypher(PlainText, MY_KEY)
     print("Cypher text: "+Cypher)
